@@ -37,7 +37,7 @@ def parsePacket(hex):
 
 def convertHex(hexInBytes):
     hexConverted = ''.join('{:02x}'.format(x) for x in hexInBytes)  #Remove spaces
-    hexstodecode = (hexConverted[6:])   #Remove first 6 bytes
+    hexstodecode = (hexConverted[6:])   #Remove first 3 bytes
     return hexstodecode
 
 def dataToB64(dataInHex):
